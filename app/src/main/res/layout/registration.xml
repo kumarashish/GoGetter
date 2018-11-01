@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:text="Registration"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:id="@+id/registration_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<EditText
+    android:imeOptions="actionNext"
+    android:singleLine="true"
+    android:id="@+id/name"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:hint="Name"
+    android:background="@drawable/edittext_bg"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="60dp"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" />
+    <EditText
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:id="@+id/mobile"
+        android:maxLength="10"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:hint="Mobile"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailId"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:hint="Email Id"
+        android:background="@drawable/edittext_bg"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:focusable="false"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_bg"
+        android:gravity="center"
+        android:hint="Click here for updating delivery location"
+        android:textColor="@color/black" />
+    <techmatics.gogetmydrink.CustomTextView
+        android:textSize="12dp"
+        android:id="@+id/locationName"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/yellow"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/yellow_rounded_corner_buton"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="45dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    <techmatics.gogetmydrink.CustomTextView
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/upload_profilePic"
+        android:textColor="@color/yellow"
+        android:text="Click here to upload profile pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

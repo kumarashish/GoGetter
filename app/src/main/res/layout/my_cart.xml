@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <techmatics.gogetmydrink.CustomTextView
+
+            android:layout_centerVertical="true"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="My Cart"
+            android:id="@+id/header"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <techmatics.gogetmydrink.CustomTextView
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:id="@+id/customerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <techmatics.gogetmydrink.CustomTextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/customermobile"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:divider="@null"
+            android:id="@+id/listView"
+            android:layout_marginBottom="85dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+
+           android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_bg"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <techmatics.gogetmydrink.CustomTextView
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical|center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_centerVertical="true"
+                android:text="Total Amount : "
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+                <techmatics.gogetmydrink.CustomTextView
+                    android:id="@+id/totalamount"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="end"
+                    android:paddingRight="20dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/pay"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"
+                android:background="@color/yellow"
+                android:text="Checkout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

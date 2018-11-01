@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/back"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:layout_centerVertical="true"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Choose Drink"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/white"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/cart"
+            android:backgroundTint="@color/white"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/cart_count"
+            android:visibility="gone"
+            android:text="10"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/cart_circle"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <View
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cart_details"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+    </RelativeLayout>
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <techmatics.gogetmydrink.CustomTextView
+            android:background="@drawable/yellow_rounded_corner_buton"
+            android:text="Beer"
+            android:id="@+id/beer"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/whisky"
+            android:text="Whishky"
+            android:padding="15dp"
+
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/rum"
+            android:text="Rum"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/vodka"
+            android:text="Vodka"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/gin"
+            android:text="Gin"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/wine"
+            android:text="Wine"
+            android:padding="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+            <View
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:scrollbars="none"
+          android:id="@+id/listView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/wine"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+            <techmatics.gogetmydrink.CustomTextView
+                android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:text="Wine Name"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <techmatics.gogetmydrink.CustomTextView
+                android:id="@+id/price"
+                android:textSize="12dp"
+                android:textColor="@android:color/darker_gray"
+                android:text="Price : $ 600"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/quantity"
+                android:inputType="number"
+                android:text=""
+                android:maxLength="2"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:hint="Qty"
+                android:textSize="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/edittext_bg"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <Button
+                android:id="@+id/add"
+                android:textAllCaps="false"
+                android:text="Add "
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_rounded_corner_buton"
+                android:layout_width="100dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

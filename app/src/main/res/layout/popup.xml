@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <techmatics.gogetmydrink.CustomTextView
+
+            android:layout_centerVertical="true"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Choose one category"
+            android:id="@+id/header"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <LinearLayout
+       android:layout_margin="20dp"
+       android:background="@drawable/yellow_rounded_corner_buton"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <techmatics.gogetmydrink.CustomTextView
+        android:layout_width="match_parent"
+        android:textAllCaps="true"
+
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Grocery"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+   </LinearLayout>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/yellow_rounded_corner_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <techmatics.gogetmydrink.CustomTextView
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+
+                android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Stationary"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+    android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/yellow_rounded_corner_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <techmatics.gogetmydrink.CustomTextView
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+
+                android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Micellaneous"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:background="@drawable/yellow_rounded_corner_buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <techmatics.gogetmydrink.CustomTextView
+                android:layout_width="match_parent"
+                android:textAllCaps="true"
+
+                android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Drinks"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"/>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    </LinearLayout>
+        <View
+            android:layout_centerVertical="true"
+            android:id="@+id/click"
+            android:layout_width="match_parent"
+            android:layout_height="400dp">/</View>
+    </RelativeLayout>
+
+</LinearLayout>

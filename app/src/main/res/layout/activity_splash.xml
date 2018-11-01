@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="techmatics.gogetmydrink.Splash">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, e
+         atc. -->
+    <LinearLayout
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_gravity="center"
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/pin" />
+    <techmatics.gogetmydrink.CustomTextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="Go"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+        <techmatics.gogetmydrink.CustomTextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="Getter"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginTop="-5dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/home"
+
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_button"
+            android:text="Home"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_width="120dp"
+            android:layout_height="35dp" />
+        <ImageView
+
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/register"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:gravity="center"
+
+            android:textSize="18dp"
+            android:text="click to Register as goGetter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <techmatics.gogetmydrink.CustomTextView
+            android:id="@+id/terms"
+            android:textColor="@color/black"
+            android:onClick="onClick"
+            android:layout_marginBottom="60dp"
+            android:gravity="center|bottom"
+
+            android:textSize="12dp"
+            android:text="Terms and Conditions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
