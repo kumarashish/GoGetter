@@ -15,7 +15,7 @@
             android:textSize="24dp"
             android:gravity="center"
             android:textColor="@color/white"
-            android:text="GoGetter with in 10 km"
+            android:text="Nearby Gogetter's"
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

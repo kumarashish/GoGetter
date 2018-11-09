@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GoGetMyDrink</string>
+    <string name="app_name">Go Getter</string>
 
     <string name="title_activity_splash">Splash</string>
     <string name="dummy_button">Dummy Button</string>
