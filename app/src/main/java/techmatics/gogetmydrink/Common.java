@@ -83,7 +83,7 @@ public class Common {
         if ((activeNetworkInfo != null) && (activeNetworkInfo.isConnected())) {
             return true;
         } else {
-            Toast.makeText(act, "Internet Unavailable", Toast.LENGTH_SHORT).show();
+            Toast.makeText(act, "Internet Unavailable!", Toast.LENGTH_SHORT).show();
             return false;
         }
     }
